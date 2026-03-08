@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import sys
 import os
 import subprocess
@@ -30,7 +31,7 @@ def run_project():
         print("app.py does not exist! Run 'python manage.py build' first.")
         return
         
-    subprocess.run([sys.executable, str(app_py_path)])
+    subprocess.run([sys.executable, "-X", "utf8", str(app_py_path)])
 
 def make_command(name):
     commands_dir = APP_PATH / "Commands"
