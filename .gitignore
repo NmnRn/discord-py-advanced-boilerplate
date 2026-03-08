@@ -1,0 +1,19 @@
+# Project environment files
+.env
+
+# Python compilation files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Core configurations user might break
+app.py
+Special/
+Commands/
+Events/
+Database_Processes/
+
+Backup.zip
+*.zip
+*.log
